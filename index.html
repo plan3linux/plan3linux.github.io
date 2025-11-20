@@ -1,36 +1,73 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Plan3 Linux</title>
-    <link rel="stylesheet" href="plan3.css" />
+      <meta charset="UTF-8">
+      <title>Plan3 Linux</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="plan3.css" />
   </head>
   <body>
-    <div class="header">
-      <img alt="Plan3 Logo" height="100" src="./plan3-logo.png" width="100"/>
-      Plan3 Linux
-    </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="./plan3-logo.png" alt="Plan3" width="30" height="24" class="d-inline-block align-text-top">
+                  Plan3 Linux
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="https://github.com/plan3linux">GitHub</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
 
-    <p><b>Home</b> | <a href="about.html">About</a> | <a href="https://github.com/plan3linux">GitHub</a></p>
-    <hr/>
-    <p>Plan3 (pronounced Plan Three, not hacker spelling for plane) is an distro that is installed on top of Arch Linux offering a family of desktop and software configurations.</p>
+      <div class="container">
+        <p>Plan3 (pronounced Plan Three, not hacker spelling for plane) is an distro that is installed on top of Arch Linux offering a family of desktop and software configurations.</p>
 
-    <h1>Releases</h1>
-    <h2>Codename Rhapsody</h2>
-    <p>With Rhapsody, we are replacing the ISO based distribution to an installation script model for a few reasons:</p>
-    <ul>
-      <li>It is easy to keep up to date</li>
-      <li>It allows cross-compatibility across x86_64, ARM64, and even RISC-V</li>
-      <li>Can be installed on other arch-distros like Manjaro, Arco Linux, and EndeavorOS. Artix support TBD</li>
-      <li>Allows even further opportunities for non-arch installs like on Debian, Gentoo, RHEL, or other distros</li>
-    </ul>
+        <h1>Releases</h1>
+        <h2>Rhapsody (26.0 RC)</h2>
+        <p>With Rhapsody, we are replacing the ISO based distribution to an installation script model for a few reasons:</p>
+        <ul>
+          <li>It is easy to keep up to date</li>
+          <li>It allows cross-compatibility across x86_64, ARM64, and even RISC-V</li>
+          <li>Can be installed on other arch-distros like Manjaro, Arco Linux, and EndeavorOS. Artix support TBD</li>
+          <li>Allows even further opportunities for non-arch installs like on Debian, Gentoo, RHEL, or other distros</li>
+        </ul>
 
-    <br>
-    <h2>Developer Preview 2023</h2>
-    <p>Back in December 2023, Plan3 started as a bspwm-based Arch distro distributed with calamares. It is currently stale and unsupported.</p>
-    <p>The configuration files were distributed through a custom arch repo, and we plan to replace that with a simpler home configuration manager</p>
-    <h3>Screenshots</h3>
-    <img alt="Plan3 ISO Edition from 2023" src="screenshots/plan3-bspwm.png" width="100%"/>
+          <h3>Prerequisites</h3>
+          <ul>
+              <li>Arch Linux or CachyOS or etc.</li>
+              <li>Paru</li>
+              <li>Sudo</li>
+          </ul>
+          <p>To install Plan3 Rhapsody, run these lines in the terminal:</p>
+          <pre><code>git clone https://github.com/plan3linux/plan3-config.git && cd plan3-config <br/>./install.sh
+          </code></pre>
 
+
+
+        <br>
+        <h2>Developer Preview 2023</h2>
+        <p>Back in December 2023, Plan3 started as a bspwm-based Arch distro distributed with calamares. It is currently stale and unsupported.</p>
+        <p>The configuration files were distributed through a custom arch repo, and we plan to replace that with a simpler home configuration manager</p>
+        <h3>Screenshots</h3>
+        <img alt="Plan3 ISO Edition from 2023" src="screenshots/plan3-bspwm.png" width="100%"/>
+      </div>
     <div class="footer">
       Copyright 2024 Plan3 Linux. All Rights Reserved.
     </div>

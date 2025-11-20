@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Plan3 Linux | About</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="plan3.css" />
 </head>
 <body>
-<div class="header">
-    <img alt="Plan3 Logo" height="100" src="./plan3-logo.png" width="100"/>
-    Plan3 Linux
-</div>
-<p><a href="index.html">Home</a> | <b>About</b> | <a href="https://github.com/plan3linux">GitHub</a></p>
-<hr />
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./plan3-logo.png" alt="Plan3" width="30" height="24" class="d-inline-block align-text-top">
+                Plan3 Linux
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/plan3linux">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<h1>Contact</h1>
-<p>Email: <a href="mailto:plan3@gmx.com">plan3@gmx.com</a></p>
+    <div class="container">
+        <h1>Contact</h1>
+        <p>Email: <a href="mailto:plan3@gmx.com">plan3@gmx.com</a></p>
 
-<h1>Mission</h1>
+        <h1>Mission</h1>
 
-<p>Plan3 is built on three core principles. An Arch Linux System running the Plan3 ecosystem should be:</p>
+        <p>Plan3 is built on three core principles. An Arch Linux System running the Plan3 ecosystem should be:</p>
 
-<h2>Simple</h2> Plan3 adheres to the KISS philosophy, and all applications bundled MUST be lightweight. An exception to this applies to Firefox, but Plan3 strives to cut out corporate bloat (will be seen one day in Plan3 Rhapsody). When we offer installation scripts for more heavyweight applications (such as JetBrains, Steam, VMWare, and et-cetera), they will ALWAYS be optional and not installed by default.
+        <h2>Simple</h2> Plan3 adheres to the KISS philosophy, and all applications bundled MUST be lightweight. An exception to this applies to Firefox, but Plan3 strives to cut out corporate bloat (will be seen one day in Plan3 Rhapsody). When we offer installation scripts for more heavyweight applications (such as JetBrains, Steam, VMWare, and et-cetera), they will ALWAYS be optional and not installed by default.
 
-<h2>Compartmentalized</h2> We encourage all users who install Plan3 to separate their root and home partitions, and even their boot paritions as well. This same philsophy is used by Apple for their macOS Operating System with APFS Containers. In our ideal system, 40GB is reserved for the root, 1GB is reserved for boot, and home, opt, var, and srv is combined in a BTRFS volume. This offers a clear sense of storage usage, and better security.
+        <h2>Compartmentalized</h2> We encourage all users who install Plan3 to separate their root and home partitions, and even their boot paritions as well. This same philsophy is used by Apple for their macOS Operating System with APFS Containers. In our ideal system, 40GB is reserved for the root, 1GB is reserved for boot, and home, opt, var, and srv is combined in a BTRFS volume. This offers a clear sense of storage usage, and better security.
 
-<h2>Logical</h2> The Plan3 Desktop should tell you imporatant information of the state of your machine. The UI should be designed to be easy to use, and keyboard driven applications should have effective and efficient hotkeys and should help you navigate those keys.
-
-<div class="footer">
-    Copyright 2024 Plan3 Linux. All Rights Reserved.
-</div>
+        <h2>Logical</h2> The Plan3 Desktop should tell you imporatant information of the state of your machine. The UI should be designed to be easy to use, and keyboard driven applications should have effective and efficient hotkeys and should help you navigate those keys.
+    </div>
+    <div class="footer">
+        Copyright 2024 Plan3 Linux. All Rights Reserved.
+    </div>
 </body>
 </html>
