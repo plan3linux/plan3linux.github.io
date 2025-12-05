@@ -41,14 +41,35 @@
       </nav>
 
       <main class="container">
+        <div id="carousel-shots" class="carousel slide">
+          <div class="carousel-inner">
+           <div class="carousel-item active">
+            <img src="screenshots/rhapsody-openbox.png" class="d-block w-100" alt="Openbox">
+           </div>
+           <div class="carousel-item">
+            <img src="screenshots/rhapsody-qtile.png" class="d-block w-100" alt="QTile">
+           </div>
+           <div class="carousel-item">
+             <img src="screenshots/rhapsody-dwm.png" class="d-block w-100" alt="DWM">
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-shots" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carousel-shots" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+        </div>
         <p>Plan3 (pronounced Plan Three) is an opinionated Arch Linux desktop framework that is installed on top of Arch Linux offering a family of desktop and software configurations.</p>
         <h1>Releases</h1>
         <h2>Rhapsody (26.0 RC)</h2>
           <h3>Install</h3>
           <p>To install Plan3 Rhapsody, run these lines in the terminal:</p>
           <pre><code>git clone https://github.com/plan3linux/plan3-config.git && cd plan3-config <br/>./install.sh</code></pre>
-          <br>
           <a href="https://github.com/plan3linux/plan3-config/">View Source on GitHub</a>
+          <br><br>
           <h3>Prerequisites</h3>
           <ul>
               <li>Arch Linux or CachyOS or etc.</li>
@@ -56,22 +77,35 @@
               <li>Paru</li>
               <li>Sudo</li>
           </ul>
+          <h3>Programs and Window Managers</h3>
+          <p>Plan3 comes bundled with pre-made configurations for various <b>programs</b> and <b>window managers</b>. Get right into work and learn the minimalist linux life without the fuss of designing a config from scratch.</p>
+
+          <b>Window Managers:</b>
+          <ul>
+            <li>Openbox</li>
+            <li>BSPWM</li>
+            <li>QTile</li>
+            <li>DWM</li>
+            <li>i3</li>
+          </ul>
+          <br>
+          <b>Programs</b>
+          <ul>
+            <li>ST - Terminal</li>
+            <li>NeoVIM - Text Editor</li>
+            <li>Emacs - Text Editor thats more than an editor</li>
+            <li>Zen Browser - Fork of Firefox</li>
+          </ul>
+
           <h3>About</h3>
-            <p>With Rhapsody, we are replacing the ISO based distribution to an installation script model for a few reasons:</p>
+            <p>Plan3 is installed ontop of an already existing Arch-based system for these reasons:</p>
             <ul>
-              <li>It is easy to keep up to date</li>
-              <li>It allows cross-compatibility across x86_64, ARM64, and even RISC-V</li>
-              <li>Can be installed on other arch-distros like Manjaro, Arco Linux, and EndeavorOS. Artix support TBD</li>
-              <li>Allows even further opportunities for non-arch installs like on Debian, Gentoo, RHEL, or other distros</li>
+              <li>Easy to keep up to date</li>
+              <li>Cross-compatibility across x86_64, ARM64, and even RISC-V</li>
+              <li>Easy to install various arch-distros like Manjaro, Arco Linux, and EndeavorOS.</li>
+              <li>Paves the way for future opportunities for non-arch installs like on Debian, Gentoo, RHEL, or other distros</li>
             </ul>
-          <h3>Screenshots</h3>
-          <img alt="Plan3 Rhapsody 26 RC" src="screenshots/rhapsody-openbox.png" width="100%"/>
         <br>
-        <h2>Developer Preview 2023</h2>
-        <p>Back in December 2023, Plan3 started as a bspwm-based Arch distro distributed with calamares. It is currently stale and unsupported.</p>
-        <p>The configuration files were distributed through a custom arch repo, and were replaced with a simpler install script</p>
-        <h3>Screenshots</h3>
-        <img alt="Plan3 ISO Edition from 2023" src="screenshots/plan3-bspwm.png" width="100%"/>
       </main>
     <div class="footer">
       Copyright 2025 Plan3 Linux. All Rights Reserved.
